@@ -1,0 +1,22 @@
+#main-todo-container {
+    width: 600px;
+    margin: 2rem auto;
+}
+
+.todo-list {
+    margin: 1rem 0;
+}
+
+.todo-done {
+    color: green;
+    text-decoration: line-through;
+} 
+
+.todo-not-done {
+    color: red;
+}
+
+.todo-item-delete-button {
+    float: right;
+    text-decoration: none;
+}
