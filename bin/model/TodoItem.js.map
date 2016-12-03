@@ -1,0 +1,1 @@
+{"version":3,"file":"TodoItem.js","sourceRoot":"","sources":["../../app/model/TodoItem.ts"],"names":[],"mappings":";AAAA;IAIE,kBAAY,IAAY,EAAE,IAAqB;QAArB,oBAAqB,GAArB,YAAqB;QAC7C,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC;QACjB,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC;IACnB,CAAC;IACH,eAAC;AAAD,CAAC,AARD,IAQC;AARD;0BAQC,CAAA"}
