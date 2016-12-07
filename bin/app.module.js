@@ -12,16 +12,13 @@ var core_1 = require('@angular/core');
 var ng_bootstrap_1 = require('@ng-bootstrap/ng-bootstrap');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
-var ProgressBar_1 = require('./components/ProgressBar');
-var ItemInput_1 = require('./components/ItemInput');
-var TodoItem_1 = require('./components/TodoItem');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, ng_bootstrap_1.NgbModule.forRoot()],
-            declarations: [app_component_1.AppComponent, ProgressBar_1.default, ItemInput_1.default, TodoItem_1.default],
+            declarations: [app_component_1.AppComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

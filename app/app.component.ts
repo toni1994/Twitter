@@ -54,7 +54,7 @@ import { Component } from '@angular/core';
         <div class="col-xs-6">
             <div class="row">
                 <div class="profile-text"> Name:Mario Boban</div>
-                <div class="profile-text"> Username:@Mbobisss</div>
+                <div class="profile-text"> @Mboban</div>
                 <div class="profile-text"> Country:Croatia</div>
                 <div class="profile-text"> City:Split</div>
             </div>
