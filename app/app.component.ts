@@ -126,7 +126,7 @@ import { Component } from '@angular/core';
    </div>
 </div>
 <div class="col-md-6">
-          <div class="row">
+          <div class="row" id="newTweet">
        <div class="box profile-info n-border-top">
                     <form>
                         <textarea class="form-control input-lg p-text-area" rows="2" placeholder="Whats in your mind today?"></textarea>
@@ -142,27 +142,35 @@ import { Component } from '@angular/core';
                     </div>
        </div>
        </div>
+
+
+      <div class="row TweetContainer">
+	   <div class="col-md-1 LeftSide">
+     <div class="row">
+	    <img src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" class="img-thumbnail are" >
+      </div>
+	   </div>
+      <div class="col-md-11 rightSide">
         <div class="row">
-          <div class="panel panel-default text-center">
-             <div class="panel-heading">
-               <h1>Basic</h1>
+          <div class="panel panel-default text-left">
+             <div class="panel-heading" id="panel-heading-tweet">
+               <a id="authorTweet"><strong>Toni Buzov</strong> <label class="timeTweet">@tonibuzov . 25 min</label></a>
+               <p id="textOfTweet">Dobar dan svima, danas sam kupio ovog ljepotana.</p>
         </div>
         <div class="panel-body">
-          <p>Hajduk opet izgubio utakmicu u san Lorenu rezultatom 2:0 sto je sokiralo navijace poznatog dalmatinskog kluba</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
+          <img src="http://www.motorward.com/wp-content/images/2016/04/Vorsteiner-BMW-M4-RACE-3.jpg" id="tweetPicture" class="img-thumbnail">
         </div>
         <div class="panel-footer">
-          <h3>$19</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
+          <i class="fa fa-reply fa-2x tweetIcon" aria-hidden="true"></i>
+          <i class="fa fa-level-up fa-2x tweetIcon" aria-hidden="true"></i>
+          <i class="fa fa-heart fa-2x tweetIcon" id="heart" aria-hidden="true"></i>
+          <i class="fa fa-ellipsis-h fa-2x tweetIcon" aria-hidden="true"></i>
         </div>
       </div>
         </div>
-      </div>  
-
+        </div>
+		</div>    
+    </div>
       <!--THIS IS THE RIGHT COLUMN AKA FOLLOW COLUMN-->
 
 <div class="col-md-3">
