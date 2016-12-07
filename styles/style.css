@@ -4,6 +4,7 @@
 body{
     background-color:#f5f8fa;
 }
+
 .panel-default>.panel-heading{
     background-color: #1DA1F2;
     color:white;
@@ -31,6 +32,14 @@ body{
 }
 .tweet_info{
     color:#8899a6;
+}
+#searchIcon{
+    margin-left: -45px;
+    border-style: none;    
+}
+
+#searchIcon:hover{
+    background-color:white;
 }
 .follow-btn{
   margin-top: 1rem; 
