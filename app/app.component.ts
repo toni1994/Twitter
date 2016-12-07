@@ -5,30 +5,80 @@ import TodoItem from './model/TodoItem';
 @Component({
   selector: 'my-app',
   template: `
-    <div class="card" id="main-todo-container">
-      <div class="card-block">
-        <h4 class="card-title">Todo app</h4>
-        <progress-bar [value]="getDonePercentage()"></progress-bar>
+   <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Naslovnica <i class="fa fa-home fa-lx" aria-hidden="true"></i> </a></li>
+        <li><a href="#">Obavijesti <i class="fa fa-bell fa-lx" aria-hidden="true"></i> </a></li>
+		    <li><a href="#">Poruke <i class="fa fa-envelope fa-lx" aria-hidden="true"></i> </a></li>
         
-        <div class="row">
-          <div class="col-lg-12">
-            <item-input [placeholder]="'Add todo'" (itemAdded)="addTodo($event)">
-              <span class="input-group-btn">
-                  <button class="btn btn-secondary" type="button" (click)="checkAll()">&#10003; Check all</button>
-              </span>
-            </item-input>
-          </div>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+	  <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
         </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+	  
+	  <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+		
+    
+       <button type="submit" class="btn btn-primary">Tweet</button>
+       
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
-        <ul class="list-group todo-list">
-          <li class="list-group-item" *ngFor="let todo of todoItems">
-            <todo-item [todoItem]="todo" (todoItemDeleted)="deleteTodo($event)"></todo-item>
-          </li>
-        </ul>
 
-        <button type="button" class="btn btn-danger pull-xs-righ" (click)="deleteDoneTodos()">&times; Delete Done</button>
+<div class="col-md-3">
+</div>
+<div class="col-md-6">
+          <div class="row">
+            
+
+       <div class="box profile-info n-border-top">
+                    <form>
+                        <textarea class="form-control input-lg p-text-area" rows="2" placeholder="Whats in your mind today?"></textarea>
+                    </form>
+                    <div class="box-footer box-form">
+                        <button type="button" class="btn btn-primary pull-right">Post</button>
+                        <ul class="nav nav-pills">
+                            <li><a href="#"><i class="fa fa-map-marker"></i></a></li>
+                            <li><a href="#"><i class="fa fa-camera"></i></a></li>
+                            <li><a href="#"><i class=" fa fa-film"></i></a></li>
+                            <li><a href="#"><i class="fa fa-microphone"></i></a></li>
+                        </ul>
+                    </div>
+       </div>
+       </div>
+        <div class="row">
+        dslfjsldkfjsldk
+        </div>
       </div>
-    </div>`
+
+
+
+       
+      
+               
+
+               
+   `
 })
 export class AppComponent { 
   private todoItems: TodoItem[];
