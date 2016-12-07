@@ -198,7 +198,7 @@ import { Component } from '@angular/core';
             </div>
          </div>
       </div>
-   </div>
+   </div> 
 </div>  
    `
 })

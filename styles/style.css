@@ -1,6 +1,8 @@
 #navbar {
     background-color: white;
-
+}
+body{
+    background-color:#f5f8fa;
 }
 .panel-default>.panel-heading{
     background-color: #1DA1F2;
