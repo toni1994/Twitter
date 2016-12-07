@@ -146,21 +146,21 @@ import { Component } from '@angular/core';
 
       <div class="row TweetContainer">
 	   <div class="col-md-1 LeftSide">
-     <div class="row">
-	    <img src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" class="img-thumbnail are" >
+     <div class="row leftPictures">
+	    <img src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" class="img-thumbnail profilSmall" >
       </div>
 	   </div>
       <div class="col-md-11 rightSide">
         <div class="row">
-          <div class="panel panel-default text-left">
+          <div class="panel panel-default text-left rSide">
              <div class="panel-heading" id="panel-heading-tweet">
                <a id="authorTweet"><strong>Toni Buzov</strong> <label class="timeTweet">@tonibuzov . 25 min</label></a>
                <p id="textOfTweet">Dobar dan svima, danas sam kupio ovog ljepotana.</p>
         </div>
-        <div class="panel-body">
+        <div class="panel-body" id="panel-body-tweet">
           <img src="http://www.motorward.com/wp-content/images/2016/04/Vorsteiner-BMW-M4-RACE-3.jpg" id="tweetPicture" class="img-thumbnail">
         </div>
-        <div class="panel-footer">
+        <div class="panel-footer" id="panel-footer-tweet">
           <i class="fa fa-reply fa-2x tweetIcon" aria-hidden="true"></i>
           <i class="fa fa-level-up fa-2x tweetIcon" aria-hidden="true"></i>
           <i class="fa fa-heart fa-2x tweetIcon" id="heart" aria-hidden="true"></i>
@@ -171,6 +171,11 @@ import { Component } from '@angular/core';
         </div>
 		</div>    
     </div>
+
+
+
+
+    
       <!--THIS IS THE RIGHT COLUMN AKA FOLLOW COLUMN-->
 
 <div class="col-md-3">
