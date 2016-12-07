@@ -1,21 +1,17 @@
 import { Component } from '@angular/core';
 
-import TodoItem from './model/TodoItem';
 
 @Component({
   selector: 'my-app',
   template: `
    <nav class="navbar navbar-default">
   <div class="container-fluid">
-    
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Naslovnica <i class="fa fa-home fa-lx" aria-hidden="true"></i> </a></li>
         <li><a href="#">Obavijesti <i class="fa fa-bell fa-lx" aria-hidden="true"></i> </a></li>
-		    <li><a href="#">Poruke <i class="fa fa-envelope fa-lx" aria-hidden="true"></i> </a></li>
-        
+		    <li><a href="#">Poruke <i class="fa fa-envelope fa-lx" aria-hidden="true"></i> </a></li>  
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
 	  <form class="navbar-form navbar-left">
         <div class="form-group">
@@ -46,11 +42,37 @@ import TodoItem from './model/TodoItem';
 
 
 <div class="col-md-3">
+  <div class="panel panel-default text-center">
+        <div class="panel-heading">
+        <h1>Profile</h1>
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="big-box">
+              <img src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" class="img-thumbnail" >
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="row">
+                <div class="profile-text"> Name:Mario Boban</div>
+                <div class="profile-text"> Username:@Mbobisss</div>
+                <div class="profile-text"> Country:Croatia</div>
+                <div class="profile-text"> City:Split</div>
+            </div>
+        </div>
+</div>
+          
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+      </div>
 </div>
 <div class="col-md-6">
           <div class="row">
-            
-
        <div class="box profile-info n-border-top">
                     <form>
                         <textarea class="form-control input-lg p-text-area" rows="2" placeholder="Whats in your mind today?"></textarea>
@@ -67,59 +89,27 @@ import TodoItem from './model/TodoItem';
        </div>
        </div>
         <div class="row">
-        dslfjsldkfjsldk
+          <div class="panel panel-default text-center">
+             <div class="panel-heading">
+               <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p>Hajduk opet izgubio utakmicu u san Lorenu rezultatom 2:0 sto je sokiralo navijace poznatog dalmatinskog kluba</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
         </div>
       </div>
-
-
-
-       
-      
-               
-
-               
+        </div>
+      </div>           
    `
 })
 export class AppComponent { 
-  private todoItems: TodoItem[];
-  
-  constructor(){
-    this.todoItems = [
-      new TodoItem("Learn Angular 2"), 
-      new TodoItem("Learn React"), 
-      new TodoItem("Learn ASP.NET core", true),
-      new TodoItem("Learn node.js", true),
-    ];
- }
-
- private getDonePercentage(): number {
-   if(this.todoItems.length === 0) { return 100; }
-
-   return 100*this.getDoneItemsCount()/this.getTotalItemsCount();    
- }
  
- private getDoneItemsCount(): number {
-   return this.todoItems.filter(todo => todo.done).length;
  }
- 
- private getTotalItemsCount(): number {
-   return this.todoItems.length;
- }
- 
- private deleteDoneTodos(){
-   //delete done -> keep only not done items
-   this.todoItems = this.todoItems.filter(it => !it.done);
- }
-
- private deleteTodo(todo: TodoItem){
-   this.todoItems.splice(this.todoItems.indexOf(todo), 1); 
- }
-
- private checkAll(){
-   this.todoItems.forEach(it => it.done = true);
- }
-
- private addTodo(value: string){
-   this.todoItems.push(new TodoItem(value));
- }
-}
