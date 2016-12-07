@@ -40,6 +40,7 @@ import { Component } from '@angular/core';
   </div><!-- /.container-fluid -->
 </nav>
 
+<!--THIS IS THE LEFT COLUMN AKA PROFILE COLUMN-->
 
 <div class="col-md-3">
    <div class="panel panel-default text-center">
@@ -75,6 +76,36 @@ import { Component } from '@angular/core';
             <div class="col-xs-6 col-sm-4">
                Pratitelji:
                <div class="twitter_numbers"> 36 </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="panel panel-default text-center">
+      <div class="panel-body">
+         <div class=""><strong>Trendovi</strong></div>
+         <div class="hashtag_link"><strong>#TravelTuesday</strong>
+          <div class="tweet_info"> 
+            @Croatia_hr šalje tweetove o toj temi 
+          </div>
+         </div>
+         <div class="hashtag_link"><strong>#Hajduk1950</strong>
+           <div class="tweet_info"> 
+             @Hajduk_Split šalje tweetove o toj temi 
+           </div>
+         </div>
+         <div class="hashtag_link"><strong>#StrongLife</strong>
+          <div class="tweet_info"> 
+              @BodyBuilding šalje tweetove o toj temi 
+            </div>
+          </div>
+         <div class="hashtag_link"><strong>#CSGO Major</strong>
+          <div class="tweet_info"> 
+              @CSGO_LIFE šalje tweetove o toj temi 
+            </div>
+         </div>
+         <div class="hashtag_link"><strong>#Esport_Life</strong>
+          <div class="tweet_info"> 
+              @Esport_eu šalje tweetove o toj temi 
             </div>
          </div>
       </div>
