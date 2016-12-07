@@ -29,7 +29,7 @@ var TodoItemComponent = (function () {
     };
     __decorate([
         core_1.Input(), 
-        __metadata('design:type', TodoItem_1.default)
+        __metadata('design:type', (typeof (_a = typeof TodoItem_1.default !== 'undefined' && TodoItem_1.default) === 'function' && _a) || Object)
     ], TodoItemComponent.prototype, "todoItem", void 0);
     __decorate([
         core_1.Output(), 
@@ -43,6 +43,7 @@ var TodoItemComponent = (function () {
         __metadata('design:paramtypes', [])
     ], TodoItemComponent);
     return TodoItemComponent;
+    var _a;
 }());
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = TodoItemComponent;

@@ -1,43 +1,49 @@
-#main-todo-container {
-    width: 600px;
-    margin: 2rem auto;
-}
-
-.todo-list {
-    margin: 1rem 0;
-}
-
-.todo-done {
-    color: green;
-    text-decoration: line-through;
-} 
-
-.todo-not-done {
-    color: red;
-}
-
-.todo-item-delete-button {
-    float: right;
-    text-decoration: none;
-}
-
 #navbar {
     background-color: white;
-
 }
+body{
+    background-color:#f5f8fa;
+}
+
 .panel-default>.panel-heading{
-    background-color: lightblue;
+    background-color: #1DA1F2;
     color:white;
 }
 .panel-default>.panel-footer{
     background-color: white;
-}
-.img-responsive{
-    vertical-align: center;
 }
 .profile-text{
     color:white;
     padding-top:0.5rem;
     text-align: left;
    font-size: 1em;
+}
+.twitter_numbers{
+    color:#1DA1F2;
+}
+.col-sm-4 {
+    width: 33.33333333%;
+    font-weight: bold;
+}
+.hashtag_link{
+    padding-top: 0.7rem;
+    color:#0084B4;
+    text-align: left;
+}
+.tweet_info{
+    color:#8899a6;
+}
+#searchIcon{
+    margin-left: -45px;
+    border-style: none;    
+}
+
+#searchIcon:hover{
+    background-color:white;
+}
+.follow-btn{
+  margin-top: 1rem; 
+}
+.text_left{
+    text-align: left;
 }
