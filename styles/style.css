@@ -9,9 +9,6 @@
 .panel-default>.panel-footer{
     background-color: white;
 }
-.img-responsive{
-    vertical-align: center;
-}
 .profile-text{
     color:white;
     padding-top:0.5rem;
@@ -32,4 +29,10 @@
 }
 .tweet_info{
     color:#8899a6;
+}
+.follow-btn{
+  margin-top: 1rem; 
+}
+.text_left{
+    text-align: left;
 }
