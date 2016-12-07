@@ -42,34 +42,43 @@ import { Component } from '@angular/core';
 
 
 <div class="col-md-3">
-  <div class="panel panel-default text-center">
-        <div class="panel-heading">
-        <h1>Profile</h1>
-    <div class="row">
-        <div class="col-xs-6">
-            <div class="big-box">
-              <img src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" class="img-thumbnail" >
+   <div class="panel panel-default text-center">
+      <div class="panel-heading">
+         <h1>Profile</h1>
+         <div class="row">
+            <div class="col-xs-6">
+               <div class="big-box">
+                  <img src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" class="img-thumbnail" >
+               </div>
             </div>
-        </div>
-        <div class="col-xs-6">
-            <div class="row">
-                <div class="profile-text"> Name:Mario Boban</div>
-                <div class="profile-text"> @Mboban</div>
-                <div class="profile-text"> Country:Croatia</div>
-                <div class="profile-text"> City:Split</div>
+            <div class="col-xs-6">
+               <div class="row">
+                  <div class="profile-text"> Name:Mario Boban</div>
+                  <div class="profile-text"> @Mboban</div>
+                  <div class="profile-text"> Country:Croatia</div>
+                  <div class="profile-text"> City:Split</div>
+               </div>
             </div>
-        </div>
-</div>
-          
-        </div>
-        <div class="panel-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
+         </div>
       </div>
+      <div class="panel-body">
+         <div class="row">
+            <div class="col-xs-6 col-sm-4">
+               Tweetovi:
+               <div class="twitter_numbers"> 4 </div>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+               Slijedim:
+               <div class="twitter_numbers"> 22 </div>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+            <div class="col-xs-6 col-sm-4">
+               Pratitelji:
+               <div class="twitter_numbers"> 36 </div>
+            </div>
+         </div>
+      </div>
+   </div>
 </div>
 <div class="col-md-6">
           <div class="row">
