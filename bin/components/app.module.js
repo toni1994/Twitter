@@ -9,17 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var ng_bootstrap_1 = require('@ng-bootstrap/ng-bootstrap');
+var platform_browser_1 = require('@angular/platform-browser');
+var app_component_1 = require('./app.component');
+var ProgressBar_1 = require('./components/ProgressBar');
+var ItemInput_1 = require('./components/ItemInput');
+var TodoItem_1 = require('./components/TodoItem');
+var AppModule = (function () {
+    function AppModule() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            template: "\n   <twitter-navbar>\n   </twitter-navbar>\n\n\n<!--THIS IS THE Profile Column-->\n<profile-column>\n</profile-column>\n\n<!--THIS IS THE Tweet Column-->\n<tweet-input>\n</tweet-input>\n\n<!--THIS IS THE Follow Column-->\n<follow-panel>\n</follow-panel>\n   "
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule, ng_bootstrap_1.NgbModule.forRoot()],
+            declarations: [app_component_1.AppComponent, ProgressBar_1.default, ItemInput_1.default, TodoItem_1.default],
+            bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], AppModule);
+    return AppModule;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.AppModule = AppModule;
+//# sourceMappingURL=app.module.js.map

@@ -9,17 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var NavbarHeader = (function () {
+    function NavbarHeader() {
     }
-    AppComponent = __decorate([
+    NavbarHeader = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "\n   <twitter-navbar>\n   </twitter-navbar>\n\n\n<!--THIS IS THE Profile Column-->\n<profile-column>\n</profile-column>\n\n<!--THIS IS THE Tweet Column-->\n<tweet-input>\n</tweet-input>\n\n<!--THIS IS THE Follow Column-->\n<follow-panel>\n</follow-panel>\n   "
+            selector: "navbar-header",
+            template: "\n      <div class=\"navbar-header\">\n         <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-navbar-collapse-1\" aria-expanded=\"false\">\n         <span class=\"sr-only\">Toggle navigation</span>\n         <span class=\"icon-bar\"></span>\n         <span class=\"icon-bar\"></span>\n         <span class=\"icon-bar\"></span>\n         </button>\n      </div>\n      \n    "
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], NavbarHeader);
+    return NavbarHeader;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = NavbarHeader;
+//# sourceMappingURL=navbarHeader.js.map

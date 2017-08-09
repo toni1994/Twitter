@@ -9,17 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var TwitterNavbar = (function () {
+    function TwitterNavbar() {
     }
-    AppComponent = __decorate([
+    TwitterNavbar = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "\n   <twitter-navbar>\n   </twitter-navbar>\n\n\n<!--THIS IS THE Profile Column-->\n<profile-column>\n</profile-column>\n\n<!--THIS IS THE Tweet Column-->\n<tweet-input>\n</tweet-input>\n\n<!--THIS IS THE Follow Column-->\n<follow-panel>\n</follow-panel>\n   "
+            selector: "twitter-navbar",
+            template: "\n    <nav class=\"navbar navbar-default\">\n   <div class=\"container-fluid\">\n      <navbar-header>\n      </navbar-header>\n      <navbar-collapse>\n      </navbar-collapse>\n   </div>\n   <!-- /.container-fluid -->\n</nav>\n      \n    "
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], TwitterNavbar);
+    return TwitterNavbar;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = TwitterNavbar;
+//# sourceMappingURL=twitterNavbar.js.map
