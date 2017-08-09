@@ -8,7 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
 var TwitterNavbar = (function () {
     function TwitterNavbar() {
     }
@@ -16,11 +17,10 @@ var TwitterNavbar = (function () {
         core_1.Component({
             selector: "twitter-navbar",
             template: "\n    <nav class=\"navbar navbar-default\">\n   <div class=\"container-fluid\">\n      <navbar-header>\n      </navbar-header>\n      <navbar-collapse>\n      </navbar-collapse>\n   </div>\n   <!-- /.container-fluid -->\n</nav>\n      \n    "
-        }), 
-        __metadata('design:paramtypes', [])
+        }),
+        __metadata("design:paramtypes", [])
     ], TwitterNavbar);
     return TwitterNavbar;
 }());
-Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = TwitterNavbar;
 //# sourceMappingURL=twitterNavbar.js.map

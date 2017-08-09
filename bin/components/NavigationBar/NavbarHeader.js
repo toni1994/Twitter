@@ -8,7 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
 var NavbarHeader = (function () {
     function NavbarHeader() {
     }
@@ -16,11 +17,10 @@ var NavbarHeader = (function () {
         core_1.Component({
             selector: "navbar-header",
             template: "\n      <div class=\"navbar-header\">\n         <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-navbar-collapse-1\" aria-expanded=\"false\">\n         <span class=\"sr-only\">Toggle navigation</span>\n         <span class=\"icon-bar\"></span>\n         <span class=\"icon-bar\"></span>\n         <span class=\"icon-bar\"></span>\n         </button>\n      </div>\n      \n    "
-        }), 
-        __metadata('design:paramtypes', [])
+        }),
+        __metadata("design:paramtypes", [])
     ], NavbarHeader);
     return NavbarHeader;
 }());
-Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = NavbarHeader;
 //# sourceMappingURL=navbarHeader.js.map

@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var User = (function () {
     function User(firstName, lastName, twitterTag, country, city) {
         this.firstName = firstName;
@@ -9,6 +10,5 @@ var User = (function () {
     }
     return User;
 }());
-Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = User;
 //# sourceMappingURL=user.js.map
