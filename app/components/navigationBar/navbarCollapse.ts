@@ -5,13 +5,13 @@ import { Component } from '@angular/core';
     template: 
     `
       <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-         <ul class="nav navbar-nav">
+         <ul class="nav navbar-nav left-navbar">
             <li class="active"><a href="#">Naslovnica <i class="fa fa-home fa-lx" aria-hidden="true"></i> </a></li>
             <li><a href="#">Obavijesti <i class="fa fa-bell fa-lx" aria-hidden="true"></i> </a></li>
             <li><a href="#">Poruke <i class="fa fa-envelope fa-lx" aria-hidden="true"></i> </a></li>
          </ul>
          <ul class="nav navbar-nav navbar-right">
-            <form class="navbar-form navbar-left" role="search">
+            <form class="navbar-form navbar-left search-navbar" role="search">
                <div class="form-group">
                   <input type="text" class="form-control" placeholder="Search">
                </div>

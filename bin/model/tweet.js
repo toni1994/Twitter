@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var Tweet = (function () {
     function Tweet(tweetAuthor, tweetAuthorTag, tweetTime, tweetText, tweetImageURL, tweetReply, tweetForward, tweetLove) {
         this.tweetAuthor = tweetAuthor;
@@ -13,5 +12,6 @@ var Tweet = (function () {
     }
     return Tweet;
 }());
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = Tweet;
 //# sourceMappingURL=tweet.js.map

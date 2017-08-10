@@ -1,6 +1,15 @@
 #navbar {
     background-color: white;
 }
+
+.left-navbar{
+    margin-left: -15px;
+}
+
+.search-navbar{
+    margin-right: 40px;
+}
+
 body{
     background-color:#f5f8fa;
 }
@@ -140,4 +149,8 @@ body{
     margin-right: 20px;
     margin-top: 7px;
     color: #aab8c2;
+}
+
+.profile-text:first-of-type{
+    padding-top: 0px;
 }
